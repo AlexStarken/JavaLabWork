@@ -57,3 +57,5 @@ curl http://localhost:8080/api/ip?ip=8.8.8.8
 
 # Add new IP information
 curl -X POST -H "Content-Type: application/json" -d '{"city": {"country": "United States", "region": "CA", "cityName": "Mountain View"}, "position": {"latitude": 37.386, "longitude": -122.0838}, "timeZone": "America/Los_Angeles", "provider": {"isp": "Google", "org": "Google LLC", "asName": "AS15169"}, "query": "8.8.8.8"}' http://localhost:8080/api/ip
+
+Maybe check the sonar
