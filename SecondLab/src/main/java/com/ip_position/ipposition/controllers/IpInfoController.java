@@ -58,13 +58,13 @@ public class IpInfoController {
         ipInfoService.addNewIpInfo(ipInfo);
     }
 
-    @PutMapping("put")
-    public void updateIpInfo(@RequestParam(required = true) Long id) {
-        ipInfoService.updateIpInfo(id);
-    }
-
     @DeleteMapping("delete")
     public void deleteIpInfo(@RequestParam(required = true) Long id) {
         ipInfoService.deleteIpInfo(id);
+    }
+
+    @PutMapping("put")
+    public void updateIpInfo(@RequestParam(required = true) Long id) {
+        ipInfoService.updateIpInfo(id);
     }
 }
